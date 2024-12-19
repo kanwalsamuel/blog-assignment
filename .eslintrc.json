@@ -1,0 +1,15 @@
+// {
+//   "extends": ["next/core-web-vitals", "next/typescript"]
+// }
+
+{
+  "extends": [
+    "next/core-web-vitals",  // Web Vitals-focused rules
+    "next/typescript"        // TypeScript rules specific to Next.js
+  ],
+  "rules": {
+    // Custom rules can be added here to override default configurations
+    "no-unused-vars": "warn",  // Example custom rule
+    "semi": ["error", "always"]  // Example custom rule
+  }
+}

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background:white;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Define custom bounce animation */
+/* @keyframes customBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px); /* You can adjust the bounce height */
+  
+
+/* Apply the custom bounce animation */
+/* .bounce-custom {
+  animation: customBounce 1s ease-in-out infinite;
+} */ 
+
+
+
+/* Define custom left-right-bounce animation */
+@keyframes leftRightBounce {
+  0% {
+    transform: translateX(-20px); /* Start by moving left */
+  }
+  50% {
+    transform: translateX(-10px); /* Move to the right */
+  }
+  100% {
+    transform: translateX(0); /* Return to the original position */
+  }
+}
+
+/* Apply the left-right-bounce animation */
+.left-right-bounce {
+  animation: leftRightBounce 1.5s ease-in-out infinite;
+}
+
+
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.animate-bgmove {
+  animation: bgMove 10s linear infinite;
+}
