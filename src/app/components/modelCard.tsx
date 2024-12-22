@@ -31,8 +31,8 @@ export default function ModelCard({ model }: { model: Model }) {
         <p className="text-gray-600">{model.description}</p>
         <div className="mt-4">
           <Link href={`/models/${model.id}`}>
-            <div className="cursor-pointer bg-yellow-500 text-white px-4 py-2 rounded hover:bg-orange-600 text-center">
-              Learn More
+            <div className="cursor-pointer bg-yellow-500 text-white px-4 py-2 rounded hover:bg-orange-600 text-center font-playfair w-32 border-r-8 border-orange-600  border-l-8 ">
+               More About
             </div>
           </Link>
         </div>
